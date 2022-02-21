@@ -4,6 +4,8 @@ set -eu
 
 export PUBLIC_KEY="!!!!! PUBLIC KEY !!!!!"
 
+echo "${PUBLIC_KEY}" | ssh-keygen -lf -
+
 mkdir -p /etc/cloud
 
 cat >/etc/cloud/cloud.cfg <<EOF
