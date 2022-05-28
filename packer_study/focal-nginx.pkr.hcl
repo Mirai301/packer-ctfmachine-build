@@ -37,7 +37,9 @@ build {
     scripts = [
       "00_setup.sh",
       "01_nginx.sh",
+      "01_nmap.sh",
       "02_cloud-init.sh",
+      "03_vuln.sh",
       "99_cleanup.sh",
     ]
   }
