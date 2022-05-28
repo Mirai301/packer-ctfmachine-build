@@ -84,7 +84,7 @@ system_info:
        - ${PUBLIC_KEY}
      gecos: Ubuntu
      groups: [adm, audio, cdrom, dialout, dip, floppy, lxd, netdev, plugdev, sudo, video]
-     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+     sudo: ["ALL=(ALL) NOPASSWD:/usr/bin/nmap"]
      shell: /bin/bash
    ntp_client: auto
    paths:
