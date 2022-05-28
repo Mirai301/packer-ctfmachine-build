@@ -14,7 +14,7 @@ source "qemu" "focal_nginx" {
   )
 
   ssh_username     = "ubuntu"
-  ssh_password     = "password"
+  ssh_password     = "Di9BE9QFJhfkG4XccKM9"
   ssh_port         = 22
   ssh_wait_timeout = "300s"
 
