@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # initial shell: access the secret.txt
-export PRIVATEKEY="!!!!! PRIVATE KEY !!!!!"
+KEY="!!!!! PRIVATE KEY !!!!!"
+KEY=`echo $KEY | base64`
+export PRIVATEKEY=$KEY
 
 mkdir /var/www/html/secret
+chmod 777 /var/www/html/secret
 
 touch /var/www/html/secret/secret.txt
 cat << EOF | sudo tee /var/www/html/secret/secret.txt
